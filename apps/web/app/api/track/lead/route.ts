@@ -11,7 +11,7 @@ import {
 import { nanoid } from "@dub/utils";
 import { NextResponse } from "next/server";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 // POST /api/track/lead – Track a lead conversion event
 export const POST = withWorkspaceEdge(
