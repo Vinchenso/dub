@@ -1,12 +1,14 @@
 // import { anthropic } from "@/lib/anthropic";
-import { DubApiError, handleAndReturnErrorResponse } from "@/lib/api/errors";
+
+import { DubApiError } from "@/lib/api/errors";
+// import { DubApiError, handleAndReturnErrorResponse } from "@/lib/api/errors";
 import { withWorkspaceEdge } from "@/lib/auth/workspace-edge";
 // import { prismaEdge } from "@/lib/prisma/edge";
-import z from "@/lib/zod";
+// import z from "@/lib/zod";
 // import { waitUntil } from "@vercel/functions";
 // import { AnthropicStream, StreamingTextResponse } from "ai";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 // const completionSchema = z.object({
 //   prompt: z.string(),
@@ -20,7 +22,7 @@ export const runtime = "edge";
 export const POST = withWorkspaceEdge(
   async ({ req, workspace }) => {
     // if (!anthropic) {
-      console.error("Anthropic is not configured. Skipping the request.");
+      // console.error("Anthropic is not configured. Skipping the request.");
       throw new DubApiError({
         code: "bad_request",
         message: "Anthropic API key is not configured.",
