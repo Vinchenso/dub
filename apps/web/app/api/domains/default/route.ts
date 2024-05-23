@@ -11,7 +11,7 @@ export const GET = withWorkspace(async ({ workspace }) => {
       projectId: workspace.id,
     },
     select: {
-      dubsh: true,
+      gothevinkencom: true,
       chatgpt: true,
       sptifi: true,
       gitnew: true,
@@ -48,7 +48,7 @@ export const PUT = withWorkspace(async ({ req, workspace }) => {
       projectId: workspace.id,
     },
     data: {
-      dubsh: defaultDomains.includes("dub.sh"),
+      gothevinkencom: defaultDomains.includes("go.thevinken.com"),
       chatgpt: defaultDomains.includes("chatg.pt"),
       sptifi: defaultDomains.includes("spti.fi"),
       gitnew: defaultDomains.includes("git.new"),
