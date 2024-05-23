@@ -10,7 +10,7 @@ import {
 import { nanoid } from "@dub/utils";
 import { NextResponse } from "next/server";
 
-export const runtime = "node";
+export const runtime = "nodejs";
 
 // POST /api/track/customer – Track a customer object
 export const POST = withWorkspaceEdge(
